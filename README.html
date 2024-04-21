@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Code Documentation</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        h1 { color: #333; }
+        h2 { color: darkblue; }
+        pre { background-color: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Python Code Documentation</h1>
+    <p>This document provides an overview of the Python code developed for controlling a pendulum system using optimal control theory.</p>
+
+    <h2>Functions Overview</h2>
+    <ul>
+        <li><strong>ham(vec)</strong>: Calculates the Hamiltonian for the system given state and costate variables.</li>
+        <li><strong>find_cost(t, vect)</strong>: Computes the total cost of a trajectory at a given time.</li>
+        <li><strong>f(t, y)</strong>: Defines the differential equations governing the dynamics of the pendulum and its costates.</li>
+        <li><strong>find_closest_state(P, theta0, phi0, prev_angle, angle, res)</strong>: Iteratively finds the closest state from a specified range of angles.</li>
+        <li><strong>control_pendulum(theta0, phi0, alpha)</strong>: Sets up and controls the pendulum to reach a resting state, minimizing the cost function.</li>
+    </ul>
+
+    <h2>Usage</h2>
+    <p>The code can be used to study and optimize the control of a pendulum with or without external forces and damping. Here is a brief example of how to use the functions:</p>
+    <pre>
+        theta0 = 0.1  # Initial angle
+        phi0 = -0.02  # Initial angular velocity
+        alpha = 0.1   # Damping coefficient
+        result = control_pendulum(theta0, phi0, alpha)
+        print("Optimal costates and cost:", result)
+    </pre>
+
+    <h2>Dependencies</h2>
+    <p>This code requires the following Python libraries:</p>
+    <ul>
+        <li>NumPy</li>
+        <li>SciPy</li>
+        <li>Math</li>
+    </ul>
+
+    <h2>Notes</h2>
+    <p>Ensure all dependencies are installed and Python version used is compatible with the libraries. This code is designed for educational and research purposes and may require adjustments for commercial use.</p>
+</body>
+</html>
