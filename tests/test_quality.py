@@ -1,6 +1,6 @@
 import numpy as np
 import control_pendulum as cp
-dl.verbose=False
+driverlib.verbose=False
 
 def test_quality():
     ob = dl.pendulum_components(α=.1, num_fronts=64, num_steps=360)
