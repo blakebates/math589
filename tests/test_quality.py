@@ -4,7 +4,7 @@ import numpy as np
 sys.path.append(".")
 import control_pendulum as cp
 import driverlib as dl
-#dl.verbose=True
+dl.verbose=False
 
 ob = dl.pendulum_components(α=.1, num_fronts=64, num_steps=360)
 ob.plot_fronts()
