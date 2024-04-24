@@ -2,9 +2,7 @@ import sys
 import numpy as np
 
 sys.path.append("..")
-from control_pendulum import control_pendulum
-
-import ../control_pendulum as cp
+import control_pendulum as cp
 import driverlib as dl
 #dl.verbose=True
 
