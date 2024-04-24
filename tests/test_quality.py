@@ -7,7 +7,7 @@ import driverlib as dl
 dl.verbose=False
 
 def test_quality():
-    ob = dl.pendulum_components(α=.1, num_fronts=64, num_steps=1440)
+    ob = dl.pendulum_components(α=.1, num_fronts=128, num_steps=1440)
     ob.plot_fronts()
     # Test validity of the solution for theta0 in [0.1, 0.2], phi0 = 0."""
     θ0 = 0.1
