@@ -1,7 +1,7 @@
 import sys
 import numpy as np
 
-sys.path.append("..")
+sys.path.append(".")
 import control_pendulum as cp
 import driverlib as dl
 #dl.verbose=True
