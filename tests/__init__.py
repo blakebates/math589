@@ -1,1 +1,1 @@
-import .driverlib as driverlib
+from .driverlib import *
