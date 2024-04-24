@@ -1,6 +1,5 @@
 import numpy as np
 import control_pendulum as cp
-
 verbose=False
 
 def test_quality():
