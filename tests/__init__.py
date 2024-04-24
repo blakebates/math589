@@ -1,1 +1,1 @@
-from .driverlib import *
+from .driverlib import pendulum_components
