@@ -1,6 +1,6 @@
 import sys
 import pytest
-sys.append("..")
+sys.path.append("..")
 
 from "control_pendulum" import control_pendulum
 
