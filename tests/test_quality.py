@@ -1,5 +1,5 @@
 import sys
-sys.path.append(".");
+sys.path.append(".")
 import numpy as np
 import control_pendulum as cp
 import driverlib as dl
